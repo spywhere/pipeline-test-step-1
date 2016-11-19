@@ -1,9 +1,10 @@
 language: node_js
 
 after_success:
+- git config --global push.default simple
 - git config --global user.email "noreply@travis-ci.org"
 - git config --global user.name "Travis Pipeline"
-- git clone ssh://$GH_TOKEN@github.com/spywhere/pipeline-test-step-2a.git
+- git clone https://$GH_TOKEN@github.com/spywhere/pipeline-test-step-2a.git
 - cd pipeline-test-step-2a
 - touch $(date +%Y%m%d%H%M%S)
 - git add .
