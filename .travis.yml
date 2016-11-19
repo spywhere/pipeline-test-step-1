@@ -1,1 +1,12 @@
 language: node_js
+
+after_success:
+- git clone ssh://$GH_TOKEN@github.com/spywhere/pipeline-test-step-2a.git
+- cd pipeline-test-step-2a
+- touch $(date +%Y%m%d%H%M%S)
+- git add .
+- git commit -m "add $(date +%Y%m%d%H%M%S) file"
+- git push origin
+
+notifications:
+  email: false
