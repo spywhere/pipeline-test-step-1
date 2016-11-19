@@ -1,4 +1,4 @@
-let execSync = require("child_process").execSync;
+var execSync = require("child_process").execSync;
 
 execSync("git config --global push.default simple");
 execSync("git config --global user.email \"noreply@travis-ci.org\"");
