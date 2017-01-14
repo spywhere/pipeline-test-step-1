@@ -6,7 +6,7 @@ before_install:
 - npm i -g travis-pipeline
 
 after_success:
-- npm run pipeline success
+- travis-pipeline success
 
 notifications:
   email: false
