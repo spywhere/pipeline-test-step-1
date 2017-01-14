@@ -2,8 +2,11 @@ language: node_js
 node_js:
 - "6"
 
+before_install:
+- npm i -g travis-pipeline
+
 after_success:
-- npm run pipeline
+- npm run pipeline success
 
 notifications:
   email: false

@@ -1,0 +1,10 @@
+user:
+  email: noreply@travis-ci.org
+  name: Travis Pipeline
+
+push:
+  default: simple
+
+trigger:
+  default:
+  - spywhere/travis-pipeline-2a
