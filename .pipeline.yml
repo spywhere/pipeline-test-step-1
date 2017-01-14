@@ -7,4 +7,4 @@ push:
 
 trigger:
   default:
-  - spywhere/travis-pipeline-2a
+  - spywhere/pipeline-test-step-2a
